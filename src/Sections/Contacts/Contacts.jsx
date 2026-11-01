@@ -1,17 +1,18 @@
 import classes from "./Contacts.module.css"
 
-import img from '../../assets/qr.png'
-
 const Contacts = () => {
   return (
-    <div className={`${classes.section} section--dark`} id="contacts"> 
-      <div className={classes.container}>
-        <h2 className={classes.title}>watsApp</h2>
-        <a className={classes.tel} href="tel:+79292947270">8-929-294-72-70</a>
-        <a className={classes.tel_2} href="tel:+79048709395">8-904-870-93-95</a>
-        <a className={classes.imgBox} href="https://vk.ru/zahvat_75" target="_blank">
-          <img className={classes.img} src={img} alt="qr-code" />
-        </a>
+    <div className="section--dark" id="contacts"> 
+      <div className="container">
+        
+        <div className="content">
+          <h2 className="h2 line-light-text">контакты</h2>
+          <div className={classes.contentBox}>
+            <p className="text-base">2-ой этаж, офис 214</p>
+            <iframe className={classes.map} src="https://yandex.ru/map-widget/v1/?ll=37.067193%2C54.506872&mode=whatshere&whatshere%5Bpoint%5D=37.067193%2C54.506873&whatshere%5Bzoom%5D=17&z=16"  frameborder="1" allowfullscreen="true"></iframe>
+          </div>
+        </div>
+        
       </div>
     </div>
   )

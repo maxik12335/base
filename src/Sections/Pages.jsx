@@ -1,6 +1,5 @@
 import Navbar from "../Components/navbar/Navbar";
-import Job from "./Job/Job";
-import React, { useState, useEffect } from 'react';
+import Faq from "./Faq/Faq";
 import Main from "./Main/Main";
 import Uslugy from "./Uslugy/Uslugy";
 import Price from "./Price/Price";
@@ -17,16 +16,17 @@ const Pages = () => {
         <Main />
 
       {/* uslugy */}
-        {/* <Uslugy /> */}
-
-      {/* job */}
-        {/* <Job /> */}
+        <Uslugy />
 
       {/* price */}
-      {/* <Price /> */}
+      <Price />
+
+      {/* Faq */}
+        <Faq />
 
       {/* contacts */}
-      {/* <Contacts /> */}
+      <Contacts />
+
     </div>
   )
 }

@@ -2,25 +2,19 @@ import classes from "./Price.module.css"
 
 const Price = () => {
   return (
-    <div className={classes.section} id="price"> 
-      <div className={classes.container}>
-        <h2 className={classes.title}>Цены</h2>
-        <p className={classes.subTitle}>с заботой к старшим <span className={classes.bold}>-20%</span> пенсионерам</p>
+    <div className="section--dark line-light-section" id="price"> 
+      <div className="container">
 
-        <div className={classes.content}>
-          <p className={classes.contentText}>
-            Мы <span className={classes.bold}>честно</span> называем цену только после того, как видим проблему своими глазами. Каждая поломка уникальна. Либо примерно называем цену после описания вами проблемы по телефону
-          </p>
-          <p className={classes.contentText}>
-            Так вы защищены от сюрпризов
-          </p>
-          <p className={classes.contentText}>
-            Узнайте точную стоимость за минуту <a className={classes.tel} href="tel:+79292947270">8-929-294-72-70</a>
-          </p>
+        <div className="content">
+          <h2 className="h2 line-light-text">Цены</h2>
+
+          <div className={classes.text}>
+            <p className="text-base">
+              Мы ценим ваше время. И чтобы не тратить его на дорогу, просто позвоните по телефону <a className="text-base hover bold" href="tel:+79606009131">8 960 600 91 31</a> и мы скажем примерную цену по вашему запросу и сроки за которые готовы сделать
+            </p>
+          </div>
         </div>
 
-        <p className={classes.text}><span className={classes.bold}>точная цена</span> — после звонка</p>
-        <p className={classes.text}>если не починим — за выезд <span className={classes.bold}>не платите</span></p>
       </div>
     </div>
   )
