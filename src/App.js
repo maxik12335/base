@@ -1,11 +1,17 @@
-import React, { useEffect, useState } from 'react'
 import './styles/App.css'
-import Pages from './Sections/Pages';
+import { BrowserRouter } from 'react-router-dom';
+import Navbar from './Components/navbar/Navbar';
+import AppRouter from './Components/AppRouter';
+import Footer from './Components/Footer/Footer';
 
-function App() {   
+function App() {
 
   return (
-    <Pages />
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <Navbar />
+      <AppRouter />
+      <Footer />
+    </BrowserRouter>
   )
 }
 

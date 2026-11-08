@@ -33,21 +33,11 @@
   filter: brightness(0.2);
 }
 
-.line-light-text {
-  padding-bottom: 15px;
+.line-light {
   border-bottom: 1px solid color-mix(in srgb, var(--color-background) 8%, transparent);
 }
 
-.line-dark-text {
-  padding-bottom: 15px;
-  border-bottom: 1px solid color-mix(in srgb, var(--color-background-dark) 8%, transparent);
-}
-
-.line-light-section {
-  border-bottom: 1px solid color-mix(in srgb, var(--color-background) 8%, transparent);
-}
-
-.line-dark-section {
+.line-dark {
   border-bottom: 1px solid color-mix(in srgb, var(--color-background-dark) 8%, transparent);
 }
 
