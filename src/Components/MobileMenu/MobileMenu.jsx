@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import Modal from '../Modal/Modal'
 import Close from '../UI/Close/Close'
 import { NAV_LINKS } from '../../data/links'
@@ -8,7 +8,7 @@ import Burger from '../UI/Burger/Burger'
 
 const MobileMenu = () => {
   const [isOpen, setIsOpen] = useState(false)
-  
+
   return (
     <div>
 
@@ -27,9 +27,9 @@ const MobileMenu = () => {
 
             <nav className={classes.menu}>
               {NAV_LINKS.map(link => (
-                <Link key={link.to} className={`${classes.link} text-base`} to={link.to} onClick={() => setIsOpen(null)}>
+                <NavLink key={link.to} className={`${classes.link} text-base`} to={link.to} onClick={() => setIsOpen(null)}>
                   {link.label}
-                </Link>
+                </NavLink>
               ))}
             </nav>
 

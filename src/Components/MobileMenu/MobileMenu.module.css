@@ -40,6 +40,10 @@
   justify-content: space-between;
 }
 
+a:global(.active){
+  opacity: var(--color-hover-opacity);
+}
+
 @media (max-width: 768px) {
   .burgerBox {
     display: flex;

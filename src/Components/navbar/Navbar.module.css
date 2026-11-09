@@ -23,6 +23,9 @@
   gap: 40px;
 }
 
+a:global(.active){
+  opacity: var(--color-hover-opacity);
+}
 
 @media (max-width: 992px) {}
 
