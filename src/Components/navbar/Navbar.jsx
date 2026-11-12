@@ -11,7 +11,7 @@ const Navbar = () => {
       <div className="container-navbar">
 
         <div className={classes.desctopMenu}>
-          <p className="text-base">clear web</p>
+          <p className="text-base">Балкон 71</p>
 
           <div className={classes.menu}>
             {NAV_LINKS.map(link => (
